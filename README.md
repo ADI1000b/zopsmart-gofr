@@ -4,10 +4,10 @@ However I was able to create and access the db "the_monarch" and the table "deta
 
 <p>The following commands were ran on the admin cmd prompt</p>
 
-```docker run --name zops-gofr-mysql -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=the_monarch -p 3306:3306 -d mysql:8.0.30```
+>docker run --name zops-gofr-mysql -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=the_monarch -p 3306:3306 -d mysql:8.0.30
 
 
-```docker exec -it zops-gofr-mysql mysql -uroot -proot123 the_monarch -e "CREATE TABLE details ( name VARCHAR(255) NOT NULL PRIMARY KEY,Number int, CheckInDate date, CheckOutDate date, NoOfRooms int);"```
+>docker exec -it zops-gofr-mysql mysql -uroot -proot123 the_monarch -e "CREATE TABLE details ( name VARCHAR(255) NOT NULL PRIMARY KEY,Number int, CheckInDate date, CheckOutDate date, NoOfRooms int);"
 
 <p>To view the progressI have made, simply run the file gofr/hotel/another.go and go to the following urls:</p>
 <ol>

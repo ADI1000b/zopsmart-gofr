@@ -11,10 +11,11 @@ the following commands were ran on the admin cmd prompt
 >docker exec -it zops-gofr-mysql mysql -uroot -proot123 the_monarch -e "CREATE TABLE details ( name VARCHAR(255) NOT NULL PRIMARY KEY,Number int, CheckInDate date, CheckOutDate date, NoOfRooms int);"
 
 to view the progress i have made, simply run the file gofr/hotel/another.go 
-and go to the following urls 
+and go to the following urls
+<l>
 1: http://localhost:8080/
 2: http://localhost:8080/details
-
+</l>
 if you want to view the working of the website 
 copy the dsw folder to htdocs of xampp and run it locally 
 
